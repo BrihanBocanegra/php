@@ -18,7 +18,8 @@ PHP admite los siguientes tipos de datos:
     Boolean
     Array
     Object
-    NULL
+    Null
+    Undefined
 -->
 
 <?php
@@ -41,7 +42,7 @@ var_dump($matriz);
 
 // Object
 
-// NULL
+// Null
 $nulo = null;
 var_dump($nulo);
 ?>
