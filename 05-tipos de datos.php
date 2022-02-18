@@ -12,14 +12,14 @@
 
 <!--
 PHP admite los siguientes tipos de datos:
-    String
-    Integer
+    String: Cadenas de texto
+    Integer: Numeros enteros
     Float (números de puntos flotantes - también llamados double)
-    Boolean
-    Array
-    Object
-    Null
-    Undefined
+    Boolean: Valores de verdadero o falso
+    Array: Matriz de valores
+    Object: Valores de funciones
+    Null: Valores nulos
+    Undefined: Valores no defindos
 -->
 
 <?php
