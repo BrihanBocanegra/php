@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functions</title>
+    <title>Arrays</title>
 </head>
 <body>
 <!-- Arrays -->
@@ -17,13 +17,9 @@
 
 <?php
     //La función array() se usa para crear una matriz:
-    $people = array("Brihan", "Tomas", "Mat", "Alonzo");
+    $people = array("Brihan", "Tomas", "Mat", "Alonzo", "Raquel");
 
-    echo " " . $people[0] . ", " . $people[1] . ", " . $people[2] . ", " . $people[3] . ".";
-    echo "<br>";
-
-    //La función count() se usa para devolver la longitud (el número de elementos) de un array:
-    echo "El número de elementos en este array es: " . count($people);
+    echo $people[0] . ", " . $people[1] . ", " . $people[2] . ", " . $people[3] . ".";
     echo "<br>";
 ?>
 
@@ -35,11 +31,7 @@
     //Los arreglos asociativos son arreglos que usan claves con nombre que usted les asigna.
     $age = array("Brihan" => "27", "Tomas" => "22", "Alonzo" => "18");
 
-    echo "Su edad es: " . $age['Brihan'];
-    echo "<br>";
-
-    //La función count() se usa para devolver la longitud (el número de elementos) de un array:
-    echo "El número de elementos en este array es: " . count($age);
+    echo "Su edad es: " . $age['Alonzo'];
     echo "<br>";
 ?>
 
@@ -56,17 +48,17 @@ La dimensión de una matriz indica el número de índices que necesita para sele
 <?php
     //Los arreglos asociativos son arreglos que usan claves con nombre que usted les asigna.
     $friends = array(
-        array ('Alejandro', 20),
-        array ('Cesar', 25),
-        array ('Manuel', 28),
-        array ('Raquel', 36)
+        array ( 
+            array ("Nombre", "Bocanegra", "Vera"),
+            25
+        ), 
+        array ('Brihan', 20),        
+        array ('Manuel', 10),
+        array ('Raquel', 36),
+        array ('Mat', 36)
     );
 
-    echo $friends[0][0];
-    echo "<br>";
-
-    //La función count() se usa para devolver la longitud (el número de elementos) de un array:
-    echo "El número de elementos en este array es: " . count($friends);
+    echo $friends[0][0][1];
     echo "<br>";
 ?>
 
@@ -86,16 +78,26 @@ krsort()- ordenar matrices asociativas en orden descendente, según la clave
 <?php
     // sort()
     $numbers = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
-    sort($numbers);
+    rsort($numbers);
 
     $arrlength = count($numbers);
         for($x = 0; $x < $arrlength; $x++) {
             echo $numbers[$x] . " ";
         }
     echo "<br>";
+?>
 
-    //La función count() se usa para devolver la longitud (el número de elementos) de un array:
-    echo "El número de elementos en este array es: " . count($numbers);
+<!--
+acount()- Cuenta todos los elementos de un array o algo de un objeto
+-->
+
+<?php
+    // acount()
+    $months = array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "setiembre", "octubre", "noviembre", "diciembre" );
+    $days = array ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo");
+
+    $ultimo = count($months) - 1;
+    echo "El último es es: " . $months[$ultimo];
     echo "<br>";
 ?>
 
