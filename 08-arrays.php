@@ -25,7 +25,7 @@
 
 <!-- Associative Arrays -->
 <h3>Arrays de asociación</h3>
-<p>Matriz de de una dimensión -una sola lista de pares clave/valor.</p>
+<p>Matriz de una dimensión -una sola lista de pares clave/valor.</p>
 
 <?php
     //Los arreglos asociativos son arreglos que usan claves con nombre que usted les asigna.
@@ -97,8 +97,11 @@ acount()- Cuenta todos los elementos de un array o algo de un objeto
     $days = array ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo");
 
     $ultimo = count($months) - 1;
-    echo "El último es es: " . $months[$ultimo];
+    echo "El último mes del año es: " . $months[$ultimo];
     echo "<br>";
+
+    $ultimo = count($days) - 1;
+    echo "El último día de la semana es: " . $days[$ultimo];
 ?>
 
 </body>

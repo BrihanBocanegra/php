@@ -31,7 +31,7 @@
 <?php
     $age = 18;
 
-    if ($age > 18) {
+    if ($age >= 18) {
         echo "Es mayor de edad"; // código a ejecutar si la condición es verdadera;
     } else {
         echo "Es menor de edad"; // código a ejecutar si la condición es falsa;
@@ -53,6 +53,17 @@
     }else {
         echo "Es menor de edad"; // código a ejecutar si la condición es falsa;
     }
+
+    $dia = "sábado";
+
+    if ($dia == "domingo" || $dia == "sábado") {
+        echo "Fin de semana";
+    } elseif ($dia == "domingo" || $dia == "sábado") {
+        echo "Semana laboral";
+    } else {
+        echo "Ingrese día";
+    }
+
 ?>
 
 <!-- Declaración switch -->
@@ -60,7 +71,7 @@
 <p>El constructor o declaración switch permite realizar diferentes acciones basadas en diferentes condiciones</p>
 
 <?php
-    $month = "enero";
+    $month = "jullio";
 
     switch ($month) {
         case "enero":
@@ -78,6 +89,8 @@
         default:
             echo "Ingresar el mes"; // código a ejecutar si... la expresión no tiene ninguna coincidencia;
       }
+
+      
 ?>
 
 </body>

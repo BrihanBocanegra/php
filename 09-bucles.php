@@ -15,13 +15,112 @@
 <h3></h3>
 
 <?php
-    $months = array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "setiembre", "octubre", "noviembre", "diciembre" );
+    $months = array("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "setiembre", "octubre", "noviembre", "diciembre");
     $days = array ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo");
+    $cursos = array("Fundamentos de PHP", "Fundamentos de Net Core", "Fundamentos de base de datos",  "Programación POO", "SQL Server", "Cloud Computing");
 
-    foreach ($months as $month) {
-        echo $month . " ";
+    foreach ($months as $mes) {
+        echo $mes . " ";
     }
     echo "<br>";
+
+    foreach ($days as $dia) {
+        echo $dia . " ";
+    }
+    echo "<br>";
+
+    foreach ($cursos as $curso) {
+        echo $curso. ", ";
+    }
+    echo "<br>";
+
+    // While Loop
+    $a = 1;
+    $b = 10;
+    $c = 1;
+
+    while ($a <= 10) {
+        echo "El número es: $a </br>";
+        $a++;
+    }
+    echo "<br>";
+
+    while ($b < 100) {
+        echo "El número es: $b </br>";
+        $b = $b + 5;
+    }
+    echo "<br>";
+
+    while ($c <= 12) {
+        echo "Mes: $c </br>";
+        $c++;
+    }
+    echo "<br>";
+
+    
+// Do While Loop
+
+
+$x = 1;
+
+do {
+    echo "El número es $x </br>";
+    $x++;
+} while ($x <= 10);
+
+$mes = "Febrero";
+$x = 0;
+
+do {
+    echo "$mes: Mes del amor y la amistad";
+    echo "</br>";
+    $x++;
+    
+} while ($x <= 10);
+echo "</br>";
+
+// For Loop
+
+
+for ($i=10; $i > 1; $i--) { 
+    echo "$mes: Mes del amor y la amistad </br>";
+    echo "El número es $i </br>";
+}
+
+
+?>
+
+<!-- Loop + Condicionales -->
+
+<?php
+
+    $paises = array (
+        "Perú",
+        "España",
+        "Mexico",
+        "Argentina",
+        "Venezuela",
+        "Guatemala"
+    );
+    
+    foreach ($paises as $pais) {
+
+        echo $pais . "</br>";
+
+        if ($pais == "España") {
+            break;
+        }
+    }
+
+    foreach ($paises as $pais) {
+
+        if ($pais == "España") {
+            continue;
+        }
+
+        echo $pais . "</br>";
+    }
+
 ?>
 
 </body>

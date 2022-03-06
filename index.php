@@ -20,4 +20,12 @@ echo "El total de segundos es $totalSegundos";
 ?>
 
 
+<?php
 
+$num=1;
+
+while($num<10){
+    $tabla=$num*2;
+    Echo "2* $num=$tabla <br>";
+    $num++;
+}

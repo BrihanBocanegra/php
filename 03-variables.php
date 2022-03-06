@@ -25,6 +25,9 @@ $txt = "¡Hola Mundo!";
 
 # La declaración de PHP echo y print se usa a menudo para enviar datos a la pantalla.
 echo $txt;
+
+$txt = 12;
+
 print $txt;
 ?>
 
